@@ -12,7 +12,7 @@ function convert_safelinks() {
   var urls = document.getElementsByTagName('a');
 
   for (var i = 0; i < urls.length; i++) {
-    // only convert the URLs that display as Safe Links
+    // only convert the URLs that appear as Safe Links
     const url = urls[i].innerText;
 
     const result = url.match(safelinks_prefix);

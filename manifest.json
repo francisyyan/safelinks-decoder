@@ -1,6 +1,6 @@
 {
   "name": "Safe Links Decoder",
-  "description": "Decode Safe Links back into the original URLs",
+  "description": "Display Microsoft Safe Links as the original URLs",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
