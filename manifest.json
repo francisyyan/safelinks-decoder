@@ -1,0 +1,12 @@
+{
+  "name": "Safe Links Decoder",
+  "description": "Decode Safe Links back into the original URLs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+  }
+}
