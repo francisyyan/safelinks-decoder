@@ -1,7 +1,7 @@
 {
   "name": "Safe Links Decoder",
   "description": "Display Microsoft Safe Links as the original URLs",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
