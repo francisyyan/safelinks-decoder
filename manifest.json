@@ -1,6 +1,6 @@
 {
-  "name": "URL Decoder",
-  "description": "Display encoded URLs (e.g., URL Defense, Safe Links) as the original URLs",
+  "name": "URL Restorer",
+  "description": "Decode and reveal the original URLs hidden behind obscure links encoded by URL Defense and Safe Links",
   "version": "2.0",
   "manifest_version": 3,
   "background": {
