@@ -1,3 +1,5 @@
+"use strict";
+
 function decode_urls() {
   const urldefense_prefix = /^https:\/\/urldefense\.com\/v3\/__(.+?)__;(.*?)!/;
   const safelinks_prefix = /^https:\/\/[a-z0-9]+\.safelinks\.protection\.outlook\.com\/\?url=(.+?)&/;
@@ -26,8 +28,7 @@ function decode_urls() {
     matches = url.match(safelinks_prefix);
     if (matches && matches.length == 2) {
       try {
-        const decoded_url = decodeURIComponent(matches[1]);
-        urls[i].innerText = decoded_url;
+        urls[i].innerText = decodeURIComponent(matches[1]);
       } catch (e) {
         console.error(e);
       }
@@ -37,7 +38,7 @@ function decode_urls() {
   }
 }
 
-// run function 'decode_urls' once the extension's icon is clicked
+// run decode_urls() once the extension's icon is clicked
 chrome.action.onClicked.addListener(function(tab) {
   chrome.scripting.executeScript({
     target: {tabId: tab.id},
